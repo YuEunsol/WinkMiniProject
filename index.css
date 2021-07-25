@@ -1,0 +1,54 @@
+body {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    margin-bottom: 1333px;
+    overflow-x: hidden;
+}
+.linkBox {
+    display: flex;
+}
+.linkGoods{
+    margin-right: 1.2rem;
+}
+.linkText {
+    display: flex;
+    justify-content: space-between;
+}
+.textStyle2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.2em;
+}
+.imgBox {
+    width: 66vw;
+    height: 37vw;
+    overflow: hidden;
+}
+img {
+    width: 100%;
+}
+#linkTextNumber {
+    display: none;
+}
+
+/*pc*/
+@media screen and (orientation:landscape) and (min-width: 1024px){
+    #linkTextNumber {
+        display: block;
+    }
+    #imgBox2 {
+        width: auto;
+        height: calc((34vw - 3.6rem) * 100 / 178);
+        overflow: hidden;
+    }
+    #linkGoods2 {
+        width: max-content;
+    }
+}
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+/*mobile*/
+@media screen and (max-width: 767px){
+
+}
