@@ -1,7 +1,5 @@
 body {
     margin-left: 1.2rem;
-    margin-right: 1.2rem;
-    margin-bottom: 1333px;
     overflow-x: hidden;
 }
 .linkBox {
@@ -26,6 +24,7 @@ body {
 img {
     width: 100%;
 }
+
 #linkTextNumber {
     display: none;
 }
