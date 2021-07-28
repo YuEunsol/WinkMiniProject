@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     margin-left: 1.2rem;
     overflow-x: hidden;
 }
@@ -21,33 +22,38 @@ body {
     height: 37vw;
     overflow: hidden;
 }
+#imgBox2 {
+    width: auto;
+    height: calc((34vw - 3.6rem) * 100 / 178);
+}
 img {
     width: 100%;
 }
-
 #linkTextNumber {
-    display: none;
+    display: block;
 }
 
 /*pc*/
 @media screen and (orientation:landscape) and (min-width: 1024px){
-    #linkTextNumber {
-        display: block;
-    }
-    #imgBox2 {
-        width: auto;
-        height: calc((34vw - 3.6rem) * 100 / 178);
-        overflow: hidden;
-    }
-    #linkGoods2 {
-        width: max-content;
-    }
+
 }
 /*tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px){
-
+    #imgBox2 {
+        width: 66vw;
+        height: 37vw;
+    }
+    #linkTextNumber {
+        display: none;
+    }
 }
 /*mobile*/
 @media screen and (max-width: 767px){
-
+    #imgBox2 {
+        width: 66vw;
+        height: 37vw;
+    }
+    #linkTextNumber {
+        display: none;
+    }
 }
