@@ -1,0 +1,38 @@
+body {
+
+}
+.textStyle1{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.6rem;
+}
+#filtersBox button {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.6rem;
+}
+#xButton {
+    background: black;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding-left: 4.5px;
+    padding-right: 4.9px;
+    padding-top: 0.6px;
+    padding-bottom: 3.2px;
+}
+#filtersTopBox {
+    display: flex;
+    justify-content: space-between;
+}
+.filterButton {
+    background: rgba(171,155,154,0.4);
+    border: 0;
+    padding: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+.filtersSection {
+}
+#applyButton {
+    display: none;
+}
