@@ -1,13 +1,23 @@
+/*blur test용 이미지*/
 body {
+    background-image: url("imgs/link1.webp");
+}
 
+#filtersBox {
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: rgba(225,225,225,0.5);
+    backdrop-filter: blur(3rem);
+}
+#filtersTopBox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 .textStyle1{
     font-family: 'Source Code Pro', monospace;
-    font-size: 0.6rem;
-}
-#filtersBox button {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 0.6rem;
+    font-size: 1px;
 }
 #xButton {
     background: black;
@@ -16,12 +26,18 @@ body {
     border: none;
     padding-left: 4.5px;
     padding-right: 4.9px;
-    padding-top: 0.6px;
-    padding-bottom: 3.2px;
 }
-#filtersTopBox {
+.category {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
+}
+.filtersSection {
+    margin-bottom: 30px;
+}
+#filtersBox button {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1px;
 }
 .filterButton {
     background: rgba(171,155,154,0.4);
@@ -30,9 +46,38 @@ body {
     padding-right: 10px;
     padding-left: 10px;
     border-radius: 3px;
+    margin-bottom: 10px;
 }
-.filtersSection {
+.colorBox {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 0.1rem;
+    display: inline-flex;
+    margin-right: 0.2rem;
 }
+/*컬러박스*/
+#black {background-color: black;}
+#blue {background-color: rgb(59, 144, 214);}
+#brown {background-color: rgb(118, 98, 90);}
+#green {background: rgb(78, 182, 100);}
+#grey {background: rgb(209, 209, 204);}
+#gold {background: rgb(201, 152, 3);}
+#neutrals {background: rgb(208, 175, 138);}
+#orange {background: rgb(237, 140, 0);}
+#red {background: rgb(212, 27, 40);}
+#silver {background: rgb(156, 156, 154);}
+#white {background-color: white;}
+#yellow {background-color: rgb(242, 192, 23);}
+
 #applyButton {
     display: none;
+}
+#applyButton, #clearButton {
+    border: 0;
+    padding: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+    background-color: rgba(238, 238, 238,0.3);
+    color: rgba(0,0,0,0.2);
 }
