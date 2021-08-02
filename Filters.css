@@ -1,19 +1,16 @@
 /*blur test용 이미지*/
 body {
     background-image: url("imgs/link1.webp");
+    margin: 0;
 }
-
 #filtersBox {
-    margin-top: 15px;
-    margin-right: 5px;
-    margin-left: 5px;
-    background-color: rgba(225,225,225,0.5);
     backdrop-filter: blur(3rem);
+    padding: 10px;
 }
 #filtersTopBox {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .textStyle1{
     font-family: 'Source Code Pro', monospace;
@@ -26,6 +23,7 @@ body {
     border: none;
     padding-left: 4.5px;
     padding-right: 4.9px;
+    padding-bottom: 3.5px;
 }
 .category {
     display: flex;
@@ -47,6 +45,10 @@ body {
     padding-left: 10px;
     border-radius: 3px;
     margin-bottom: 10px;
+}
+.filterButton:hover {
+    background: rgb(137, 119, 118);
+    color: #f5eee9;
 }
 .colorBox {
     width: 0.6rem;
@@ -78,6 +80,40 @@ body {
     padding-right: 10px;
     padding-left: 10px;
     border-radius: 3px;
-    background-color: rgba(238, 238, 238,0.3);
+    background-color: rgba(189, 189, 189, 0.3);
     color: rgba(0,0,0,0.2);
+}
+
+/*pc*/
+@media screen and (orientation:landscape) and (min-width: 1024px){
+    #filtersBox {
+        top: 80px;
+        right: 15px;
+        position: fixed;
+        background-color: rgba(239, 239, 239,0.7);
+        border-radius: 5px;
+        width: 260px;
+        height: 75vh;
+        overflow-y: auto;
+    }
+}
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #filtersBox {
+        background-color: rgba(225,225,225,0.5);
+        height: calc(100vh - 20px);
+    }
+    #applyButton {
+        display: inline;
+    }
+}
+/*mobile*/
+@media screen and (max-width: 767px){
+    #filtersBox {
+        background-color: rgba(225,225,225,0.5);
+        height: calc(100vh - 20px);
+    }
+    #applyButton {
+        display: inline;
+    }
 }
