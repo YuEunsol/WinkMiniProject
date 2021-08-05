@@ -1,0 +1,26 @@
+.textStyle2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.2em;
+}
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+#typingText {
+    border-right: 1px solid black;
+    animation: cursor 1s ease infinite;
+}
+#scroll {
+    height: 600vh;
+}
+/*pc*/
+@media screen and (orientation:landscape) and (min-width: 1024px){
+
+}
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+/*mobile*/
+@media screen and (max-width: 767px){
+
+}
