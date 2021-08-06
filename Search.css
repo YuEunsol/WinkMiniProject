@@ -9,18 +9,34 @@
     border-right: 1px solid black;
     animation: cursor 1s ease infinite;
 }
+#search {
+    position: fixed;
+}
 #scroll {
     height: 600vh;
 }
+#glasses {
+    border: 0;
+    background-color: transparent;
+    cursor: url("imgs/pointer.png") 0 0, auto;
+    /*cursor: none;*/
+}
 /*pc*/
 @media screen and (orientation:landscape) and (min-width: 1024px){
-
+    #search {
+        top: 0;
+        right: 0;
+    }
 }
 /*tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px){
-
+    #search {
+        left: 0;
+    }
 }
 /*mobile*/
 @media screen and (max-width: 767px){
-
+    #search {
+        left: 0;
+    }
 }
