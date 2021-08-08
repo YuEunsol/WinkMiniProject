@@ -9,21 +9,18 @@
     border-right: 1px solid black;
     animation: cursor 1s ease infinite;
 }
-#search {
-    position: fixed;
-}
 #scroll {
     height: 600vh;
 }
 #glasses {
     border: 0;
     background-color: transparent;
-    cursor: url("imgs/pointer.png") 0 0, auto;
-    /*cursor: none;*/
+    cursor: url(imgs/cursor.html) 0 0, auto;
 }
 /*pc*/
 @media screen and (orientation:landscape) and (min-width: 1024px){
     #search {
+        position: fixed;
         top: 0;
         right: 0;
     }
